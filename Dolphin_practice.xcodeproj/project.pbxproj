@@ -13,6 +13,7 @@
 		9A47CC1F23F1B6690004CAEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A47CC1E23F1B6690004CAEC /* Assets.xcassets */; };
 		9A47CC2223F1B6690004CAEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A47CC2123F1B6690004CAEC /* Preview Assets.xcassets */; };
 		9A47CC2523F1B6690004CAEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A47CC2323F1B6690004CAEC /* LaunchScreen.storyboard */; };
+		9A47CC3023F30D620004CAEC /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A47CC2F23F30D620004CAEC /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9A47CC2123F1B6690004CAEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A47CC2423F1B6690004CAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A47CC2623F1B6690004CAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A47CC2F23F30D620004CAEC /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		9A47CC1723F1B6670004CAEC /* Dolphin_practice */ = {
 			isa = PBXGroup;
 			children = (
+				9A47CC2E23F308050004CAEC /* 2020_02_12 */,
 				9A47CC1823F1B6670004CAEC /* AppDelegate.swift */,
 				9A47CC1A23F1B6670004CAEC /* SceneDelegate.swift */,
 				9A47CC1C23F1B6670004CAEC /* ContentView.swift */,
@@ -73,6 +76,14 @@
 				9A47CC2123F1B6690004CAEC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9A47CC2E23F308050004CAEC /* 2020_02_12 */ = {
+			isa = PBXGroup;
+			children = (
+				9A47CC2F23F30D620004CAEC /* SearchView.swift */,
+			);
+			path = 2020_02_12;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A47CC3023F30D620004CAEC /* SearchView.swift in Sources */,
 				9A47CC1923F1B6670004CAEC /* AppDelegate.swift in Sources */,
 				9A47CC1B23F1B6670004CAEC /* SceneDelegate.swift in Sources */,
 				9A47CC1D23F1B6670004CAEC /* ContentView.swift in Sources */,

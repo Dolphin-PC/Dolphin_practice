@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SearchView: View {
     @State var dates = ["hello","HI","welcome","world","asdfs","fdskfljsd","박찬영","김성원","박성원"]
     @State var txt = ""
     var body: some View {
@@ -23,14 +23,15 @@ struct ContentView: View {
     }
 }
 
-struct searchBar_view_Previews: PreviewProvider {
+struct SearchView_view_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SearchView()
     }
 }
 
-struct searchview : UIViewRepresentable {
-    func makeUIView(context: UIViewRepresentableContext<searchview>) -> UISearchBar {
+struct search_view : UIViewRepresentable {
+    
+    func makeUIView(context: UIViewRepresentableContext<search_view>) -> UISearchBar {
         let searchbar = UISearchBar()
         searchbar.barStyle = .default
         searchbar.autocapitalizationType = .none
@@ -40,17 +41,17 @@ struct searchview : UIViewRepresentable {
     
     @Binding var txt : String
     
-    func makeCoordinator() -> searchview.Coordinator{
-        return searchview.Coordinator(parent1: self)
+    func makeCoordinator() -> search_view.Coordinator{
+        return search_view.Coordinator(parent1: self)
     }
     
-    func updateUIView(_ uiView : UISearchBar,context: UIViewRepresentableContext<searchview>){
+    func updateUIView(_ uiView : UISearchBar,context: UIViewRepresentableContext<search_view>){
         
     }
     class Coordinator : NSObject,UISearchBarDelegate{
-        var parent : searchview!
+        var parent : search_view!
         
-        init(parent1 : searchview){
+        init(parent1 : search_view){
             parent = parent1
         }
         
