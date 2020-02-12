@@ -13,7 +13,7 @@ struct SearchView: View {
     @State var txt = ""
     var body: some View {
         VStack{
-            searchview(txt: $txt)
+            search_view(txt: $txt)
             
             
             List(dates.filter{ txt == "" ? true : $0.localizedCaseInsensitiveContains(txt)},id: \.self){i in
