@@ -19,6 +19,8 @@
 		9A62173C23F43699006441A3 /* ButtonWithBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62173B23F43699006441A3 /* ButtonWithBadge.swift */; };
 		9A62173E23F43B0F006441A3 /* Swipe-up-down.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62173D23F43B0E006441A3 /* Swipe-up-down.swift */; };
 		9A62174023F43E11006441A3 /* SignInwithGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62173F23F43E11006441A3 /* SignInwithGoogle.swift */; };
+		9AE4BE6923F5986300F763B6 /* iPad_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4BE6823F5986300F763B6 /* iPad_App.swift */; };
+		9AE4BE6D23F5A01700F763B6 /* Analogue_Watch_Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4BE6C23F5A01700F763B6 /* Analogue_Watch_Interface.swift */; };
 		BC9E44ECB6561D47A792054C /* Pods_Dolphin_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A2D8EBCF98765D199E6DF8 /* Pods_Dolphin_practice.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,9 @@
 		9A62173B23F43699006441A3 /* ButtonWithBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithBadge.swift; sourceTree = "<group>"; };
 		9A62173D23F43B0E006441A3 /* Swipe-up-down.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swipe-up-down.swift"; sourceTree = "<group>"; };
 		9A62173F23F43E11006441A3 /* SignInwithGoogle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInwithGoogle.swift; sourceTree = "<group>"; };
+		9AE4BE6723F5918700F763B6 /* Dolphin_practice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dolphin_practice.entitlements; sourceTree = "<group>"; };
+		9AE4BE6823F5986300F763B6 /* iPad_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPad_App.swift; sourceTree = "<group>"; };
+		9AE4BE6C23F5A01700F763B6 /* Analogue_Watch_Interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analogue_Watch_Interface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +97,8 @@
 		9A47CC1723F1B6670004CAEC /* Dolphin_practice */ = {
 			isa = PBXGroup;
 			children = (
+				9AE4BE6B23F59FE700F763B6 /* iPad_App */,
+				9AE4BE6723F5918700F763B6 /* Dolphin_practice.entitlements */,
 				9A62173823F43039006441A3 /* 2020_02_13 */,
 				9A47CC2E23F308050004CAEC /* 2020_02_12 */,
 				9A47CC1823F1B6670004CAEC /* AppDelegate.swift */,
@@ -131,6 +138,15 @@
 				9A62173F23F43E11006441A3 /* SignInwithGoogle.swift */,
 			);
 			path = 2020_02_13;
+			sourceTree = "<group>";
+		};
+		9AE4BE6B23F59FE700F763B6 /* iPad_App */ = {
+			isa = PBXGroup;
+			children = (
+				9AE4BE6823F5986300F763B6 /* iPad_App.swift */,
+				9AE4BE6C23F5A01700F763B6 /* Analogue_Watch_Interface.swift */,
+			);
+			path = iPad_App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,11 +286,13 @@
 				9A47CC3023F30D620004CAEC /* SearchView.swift in Sources */,
 				9A62173E23F43B0F006441A3 /* Swipe-up-down.swift in Sources */,
 				9A62174023F43E11006441A3 /* SignInwithGoogle.swift in Sources */,
+				9AE4BE6D23F5A01700F763B6 /* Analogue_Watch_Interface.swift in Sources */,
 				9A47CC1923F1B6670004CAEC /* AppDelegate.swift in Sources */,
 				9A62173A23F4304A006441A3 /* userDefaultData.swift in Sources */,
 				9A47CC1B23F1B6670004CAEC /* SceneDelegate.swift in Sources */,
 				9A47CC1D23F1B6670004CAEC /* ContentView.swift in Sources */,
 				9A62173C23F43699006441A3 /* ButtonWithBadge.swift in Sources */,
+				9AE4BE6923F5986300F763B6 /* iPad_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +429,9 @@
 			baseConfigurationReference = 8A1C394E7F07CD9E2BB134DC /* Pods-Dolphin_practice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Dolphin_practice/Dolphin_practice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Dolphin_practice/Preview Content\"";
 				DEVELOPMENT_TEAM = X4AY89W7YP;
 				ENABLE_PREVIEWS = YES;
@@ -422,6 +442,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "pcy.Dolphin-practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -432,7 +453,9 @@
 			baseConfigurationReference = 409E5111C112AAEA3483B3AB /* Pods-Dolphin_practice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Dolphin_practice/Dolphin_practice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Dolphin_practice/Preview Content\"";
 				DEVELOPMENT_TEAM = X4AY89W7YP;
 				ENABLE_PREVIEWS = YES;
@@ -443,6 +466,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "pcy.Dolphin-practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
